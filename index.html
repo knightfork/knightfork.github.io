@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html style="color:#0B2228";>
+    <head>
+        <style>
+            body {
+                background-color: rgb(230, 230, 230);
+                font-family: 'Arial';
+                text-decoration:none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <b>What can CheSScan do?</b>
+        <p>
+        <ul>
+            <li>Scan chess tournament scoresheets and extract moves out of those to store as a PGN file on your device.</li>
+            <li>Let you do a quick analysis of games you have stored after having scanned and corrected them.</li>
+            <li>Allow you to share your games PGN via email for a later deeper analysis or to share with your fellow chess players/trainers.</li>
+        </ul>
+        </p>
+        
+        <b>How to use CheSScan</b>
+        <p>
+        <ol>
+            <li>Use camera icon and take as clear a photo as possible just about covering the whole scoresheet.</li>
+            <li>Once you have taken a scoresheet photo CheSScan shows a preview view of the scoresheet. If you are satisfied with the image, press scan icon at the bottom left.</li>
+            <li>CheSScan lists all the moves it could identify/recognize. These moves are CheSScan's best guess.</li>
+            <li>Adjust piece animation speed to what makes you most comfortable working with.</li>
+            <li>Correct moves starting from the first move onwards by tapping on the move you would like to correct. In the horizontally scrollable popover that appears, all the legal moves from current board position are displayed. Select the correct move for the move that was incorrectly identified by CheSScan.</li>
+            <li>You can also correct a move using drag-and-drop by moving a piece on the board from the position that's on the board. To select a piece for drag-and-drop you have to long press the piece for a fraction of a second, which then highlights all the legal moves a piece can move to.</li>
+            <li>Swipe left or right on board to move ahead or back one half-move respectively. Double tap on extreme right or extreme left of the board to move ahead or back 5 moves respectively.</li>
+            <li>CheSScan is OCR based and will give better results if your scoresheet is written in a clear and distinctly legible handwriting.</li>
+            <li>Each move component has to be written within the move box/row in a non-cursive handwriting.</li>
+            <li>CheSScan may misidentify a lot of moves depending on a lot of factors - condition of scoresheet, scoresheet and handwriting color, quality of photo taken and handwriting...just to name a few.</li>
+            <li>CheSScan might not be able to handle all different layout scoresheets at this moment, but certainly aims to do so. If you encounter a scoresheet that has repeatedly failed at recognizing moves please let the developer know at the email address provided below.</li>
+            <li>Please report bugs or crashes to the developer at cheSScan.developer@gmail.com</li>
+        </ol>
+        </p>
+        
+        <b>Credits</b>
+        <p>CheSScan - Chess Scoresheet Moves and Position Scanning App</p>
+        <ul style="list-style-type:none;">
+            <li>Copyright © 2019, <i>Alok Nagdev. All Rights Reserved.</i></li>
+            <li>Version <i>1.0.0</i></li>
+            <li>Build 2<i></i></li>
+            <li></li>
+        </ul>
+        
+        <p>CheSScan uses open source components. Information on the source code and license terms for these components is listed briefly below alongwith links to their websites for further details. CheSScan developer would like to express sincere gratitude to them.</p>
+        <b>Open Source Computer Vision Library (OpenCV)</b>
+        <ul style="list-style-type:none;">
+            <li>Source Code: <i>https://github.com/opencv/opencv</i></li>
+            <li>Copyright © 2000-2019 <i>Intel Corporation, all rights reserved (Please check the link for other attributions).</i></li>
+            <li>License (3-clause BSD) <i>https://opencv.org/license</i></li>
+            <li></li>
+        </ul>
+        
+        <b>TensorFlow</b>
+        <ul style="list-style-type:none;">
+            <li>Source Code: <i>https://github.com/tensorflow/tensorflow</i></li>
+            <li>Copyright © 2019 <i>The TensorFlow Authors. All rights reserved.</i></li>
+            <li>License (Apache 2.0) <i>https://github.com/tensorflow/tensorflow/blob/master/LICENSE</i></li>
+            <li></li>
+        </ul>
+        
+        <b>Arasan Chess</b>
+        <ul style="list-style-type:none;">
+            <li>Source Code: <i>https://github.com/jdart1/arasan-chess</i></li>
+            <li>Copyright © 1994-2015 <i>Jon Dart</i></li>
+            <li>License (MIT) <i>https://www.arasanchess.org/license.shtml</i></li>
+            <li></li>
+        </ul>
+        
+        <b>Simple Java Chess Library (Chesslib)</b>
+        <ul style="list-style-type:none;">
+            <li>Source Code: <i>https://github.com/bhlangonijr/chesslib</i></li>
+            <li>Copyright © 2016-2019 <i>Ben-Hur Carlos Vieira Langoni Junior</i></li>
+            <li>License (Apache 2.0) <i>https://github.com/bhlangonijr/chesslib/blob/master/LICENSE</i></li>
+            <li>Changes: <i>Library ported from Java to C++</i></li>
+            <li></li>
+        </ul>
+        
+        <b>FDChessboardview</b>
+        <ul style="list-style-type:none;">
+            <li>Source Code: <i>https://github.com/fulldecent/FDChessboardView</i></li>
+            <li>Copyright © 2014-2019 <i>William Entriken</i></li>
+            <li>License (MIT) <i>https://github.com/fulldecent/FDChessboardView/blob/master/LICENSE</i></li>
+            <li></li>
+        </ul>
+        
+        <b>Privacy Poilicy</b>
+        <ul style="list-style-type:none;">
+            <li>CheSScan does not collect any user data and consequently does not store any user information.</li>
+            <li></li>
+        </ul>
+
+        <b>Legal</b>
+<!--        <p>Using CheSScan</p>-->
+        <ul>
+            <li>CheSScan does not, in any shape or form, promote cheating and/or copyright violation. Individuals using the app in unlawful or unethical (for e.g. using CheSScan for live tournament scoresheet scanning and running analysis) activity are not endorsed by CheSScan.</li>
+            <li>CheSScan does not guarantee, whilst it aspires to, to perform the task it is intended for, for the very simple reason that handwriting recognition is dependent on many outside parameters which may be beyond CheSScan's control.</li>
+            <li>Running analysis using CheSScan is energy intensive task and it is advised to use it sparingly if battery power is your concern. Analysis engine is run on the device. CheSScan is not responsible for battery drainage due to prolonged use of it.</li>
+        </ul>
+        
+    </body>
+</html>
