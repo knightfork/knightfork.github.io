@@ -1,108 +1,308 @@
 <!DOCTYPE html>
-<html style="color:#0B2228";>
-    <head>
-        <style>
-            body {
-                background-color: rgb(230, 230, 230);
-                font-family: 'Arial';
-                text-decoration:none;
-            }
-        </style>
-    </head>
-    
-    <body>
-        
-        <b>What can CheSScan do?</b>
-        <p>
-        <ul>
-            <li>Scan chess tournament scoresheets and extract moves out of those to store as a PGN file on your device.</li>
-            <li>Let you do a quick analysis of games you have stored after having scanned and corrected them.</li>
-            <li>Allow you to share your games PGN via email for a later deeper analysis or to share with your fellow chess players/trainers.</li>
-        </ul>
-        </p>
-        
-        <b>How to use CheSScan</b>
-        <p>
-        <ol>
-            <li>Use camera icon and take as clear a photo as possible just about covering the whole scoresheet.</li>
-            <li>Once you have taken a scoresheet photo CheSScan shows a preview view of the scoresheet. If you are satisfied with the image, press scan icon at the bottom left.</li>
-            <li>CheSScan lists all the moves it could identify/recognize. These moves are CheSScan's best guess.</li>
-            <li>Adjust piece animation speed to what makes you most comfortable working with.</li>
-            <li>Correct moves starting from the first move onwards by tapping on the move you would like to correct. In the horizontally scrollable popover that appears, all the legal moves from current board position are displayed. Select the correct move for the move that was incorrectly identified by CheSScan.</li>
-            <li>You can also correct a move using drag-and-drop by moving a piece on the board from the position that's on the board. To select a piece for drag-and-drop you have to long press the piece for a fraction of a second, which then highlights all the legal moves a piece can move to.</li>
-            <li>Swipe left or right on board to move ahead or back one half-move respectively. Double tap on extreme right or extreme left of the board to move ahead or back 5 moves respectively.</li>
-            <li>CheSScan is OCR based and will give better results if your scoresheet is written in a clear and distinctly legible handwriting.</li>
-            <li>Each move component has to be written within the move box/row in a non-cursive handwriting.</li>
-            <li>CheSScan may misidentify a lot of moves depending on a lot of factors - condition of scoresheet, scoresheet and handwriting color, quality of photo taken and handwriting...just to name a few.</li>
-            <li>CheSScan might not be able to handle all different layout scoresheets at this moment, but certainly aims to do so. If you encounter a scoresheet that has repeatedly failed at recognizing moves please let the developer know at the email address provided below.</li>
-            <li>Please report bugs or crashes to the developer at cheSScan.developer@gmail.com</li>
-        </ol>
-        </p>
-        
-        <b>Credits</b>
-        <p>CheSScan - Chess Scoresheet Moves and Position Scanning App</p>
-        <ul style="list-style-type:none;">
-            <li>Copyright © 2019, <i>Alok Nagdev. All Rights Reserved.</i></li>
-            <li>Version <i>1.0.0</i></li>
-            <li>Build 2<i></i></li>
-            <li></li>
-        </ul>
-        
-        <p>CheSScan uses open source components. Information on the source code and license terms for these components is listed briefly below alongwith links to their websites for further details. CheSScan developer would like to express sincere gratitude to them.</p>
-        <b>Open Source Computer Vision Library (OpenCV)</b>
-        <ul style="list-style-type:none;">
-            <li>Source Code: <i>https://github.com/opencv/opencv</i></li>
-            <li>Copyright © 2000-2019 <i>Intel Corporation, all rights reserved (Please check the link for other attributions).</i></li>
-            <li>License (3-clause BSD) <i>https://opencv.org/license</i></li>
-            <li></li>
-        </ul>
-        
-        <b>TensorFlow</b>
-        <ul style="list-style-type:none;">
-            <li>Source Code: <i>https://github.com/tensorflow/tensorflow</i></li>
-            <li>Copyright © 2019 <i>The TensorFlow Authors. All rights reserved.</i></li>
-            <li>License (Apache 2.0) <i>https://github.com/tensorflow/tensorflow/blob/master/LICENSE</i></li>
-            <li></li>
-        </ul>
-        
-        <b>Arasan Chess</b>
-        <ul style="list-style-type:none;">
-            <li>Source Code: <i>https://github.com/jdart1/arasan-chess</i></li>
-            <li>Copyright © 1994-2015 <i>Jon Dart</i></li>
-            <li>License (MIT) <i>https://www.arasanchess.org/license.shtml</i></li>
-            <li></li>
-        </ul>
-        
-        <b>Simple Java Chess Library (Chesslib)</b>
-        <ul style="list-style-type:none;">
-            <li>Source Code: <i>https://github.com/bhlangonijr/chesslib</i></li>
-            <li>Copyright © 2016-2019 <i>Ben-Hur Carlos Vieira Langoni Junior</i></li>
-            <li>License (Apache 2.0) <i>https://github.com/bhlangonijr/chesslib/blob/master/LICENSE</i></li>
-            <li>Changes: <i>Library ported from Java to C++</i></li>
-            <li></li>
-        </ul>
-        
-        <b>FDChessboardview</b>
-        <ul style="list-style-type:none;">
-            <li>Source Code: <i>https://github.com/fulldecent/FDChessboardView</i></li>
-            <li>Copyright © 2014-2019 <i>William Entriken</i></li>
-            <li>License (MIT) <i>https://github.com/fulldecent/FDChessboardView/blob/master/LICENSE</i></li>
-            <li></li>
-        </ul>
-        
-        <b>Privacy Poilicy</b>
-        <ul style="list-style-type:none;">
-            <li>CheSScan does not collect any user data and consequently does not store any user information.</li>
-            <li></li>
-        </ul>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - template updated for CheSScan -->
+  <title>CheSScan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
-        <b>Legal</b>
-<!--        <p>Using CheSScan</p>-->
-        <ul>
-            <li>CheSScan does not, in any shape or form, promote cheating and/or copyright violation. Individuals using the app in unlawful or unethical (for e.g. using CheSScan for live tournament scoresheet scanning and running analysis) activity are not endorsed by CheSScan.</li>
-            <li>CheSScan does not guarantee, whilst it aspires to, to perform the task it is intended for, for the very simple reason that handwriting recognition is dependent on many outside parameters which may be beyond CheSScan's control.</li>
-            <li>Running analysis using CheSScan is energy intensive task and it is advised to use it sparingly if battery power is your concern. Analysis engine is run on the device. CheSScan is not responsible for battery drainage due to prolonged use of it.</li>
-        </ul>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      width: auto;
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+  }
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  .post-content {
+      font: 100 16px/1.3 Raleway, sans-serif;
+      color: #000000;
+      opacity: 1.0;
+      margin-top: -720px;
+      margin-left: 0px;
+      position: absolute;
+      width:60%;
+      height: 400px;
+      max-height: 400px;  
+      text-align:left;
+      overflow-y: scroll;
+  }
+  .thumbnail {
+      margin:0 auto;
+      text-align:center;
+  }
+  .wrapper {
+      text-align:center;
+  }  
+</style>
+</head>
+
+<body id="chesscan" data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#snNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#home">CheSScan</a>
+    </div>
+    <div class="collapse navbar-collapse" id="snNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (Home Section) -->
+<div id="home" class="container text-center">
+  <h4 class="text-center">CheSScan</h4>
+  <h2>Chess Scoresheet Moves Scanner</h2>
+  <p class="text-left">CheSScan is a document scanning utility to help retrieve a chess game moves in Portable Game Notation (PGN) from a chess tournament scoresheet which is written using Standard Algebraic Notation (SAN).</p>
+
+  <p class="text-left">As of current version, following features are supported by CheSScan:</p>
+    <ol class="text-left">
+        <li>Scoresheet scanning - scans chess tournament scoresheets and predicts closest matching moves recognized by it and provides opportunity to the user to correct misidentified moves.</li>
+        <li>Writing Game PGN - store scanned and corrected games as PGN on device.</li>
+        <li>Analysis - lets users do analysis of games in the database with a very strong chess engine.</li>
+        <li>Sharing Games - allows users to share their games PGN via email with fellow chess players or trainers.</li>
+    </ol>
+  <br>
+  <p class="text-left">CheSScan uses Optical Character Recognition (OCR) techniques. CheSScan also provides an easy way to correct incorrectly recognized moves by the OCR, since OCR accuracy can vary depending on the handwriting of an individual (and many other factors), using two different visual aids - by moving a chess piece on the chessboard or by choosing the correct move from the popover after tapping on the incorrect move in move collection view. Tool is intended to assist its users in not wasting time in entering moves manually and getting down to more productive task of analyzing one's games.
+  <p class="text-left">CheSScan also provides an engine to analyze your game quickly for any blunders, mistakes or inaccuracies that you or your opponent may have committed in your game. To access analysis part you have to first scan, correct and save your game. You can then run analysis on your saved games as and when you like. Your games PGN lives on your device.
+  <p class="text-left">CheSScan aims to be able to "scan" with high level of accuracy, all types of handwritings and different layout scoresheets. However, at this point it is not quite there and is limited in following aspects:
+  <ol class="text-left">
+    <li>Cannot recognize cursive handwriting. So, your moves letters/characters should be distinctly legible.</li>
+    <li>Moves should not be overlapping or obstructed by scoresheet layout. Move characters should not cross over any of the scoresheet layout lines.</li>
+    <li>A handwriting that is not legible to humans would most likely be impossible for an OCR to understand. If you fall in this category, quite possibly, tool would not be of much help to you.</li>
+    <li>Scoresheet should be as clean as possible, and should not contain unused or crossed out move lines or move boxes.</li>
+    <li>A crumpled, marred or unclean scoresheet would be extremely hard for recognizer to work on, and most likely would return without having recognized any moves.</li>
+  </ol>
+  <br>
+</div>
+
+<!-- Container (Terms Section) -->
+<div id="terms" class="container text-center">
+  <h2 class="text-center">Terms and Conditions</h2>
+  <p class="text-left">Please read these terms and conditions ("terms", "terms and conditions") carefully before using CheSScan (the "service") with or without the subscription; operated and maintained by CheSScan Developer(s) ("us", 'we", "our"). Services provided to you by us are subject to the conditions stated below in this document. Every time you access the service or subscribe to it, you accept the conditions mentioned hereafter.</p>
+	<ul class="text-left">
+		<li>We do not, in any shape or form, promote cheating and/or copyright violation. Individuals using the service in unlawful or unethical (for e.g. using the service for live tournament scoresheet scanning and/or running analysis for gaining unwarranted advantage) activities are not endorsed by us.</li>
+		<li>We do not guarantee, whilst we aspire to, to perform the task the service is intended for, for the very simple reason that handwriting recognition is dependent on many outside parameters which may be beyond the control of the service as of this version.</li>
+		<li>Running analysis feature of the service is energy intensive task and it is advised to use it sparingly if battery power drainage is your concern. All the features of the service are run on the device.</li>
+		<li>We reserve all the rights to change terms of service and privacy policy anytime. Your continued use of the services after revised policy has taken effect would be taken as acceptance of the revised policy.</li>
+	</ul>
+
+  <h3 class="text-left">The Service</h3>
+  <p class="text-left">As of current version, following features are supported by CheSScan:</p>
+    <ol class="text-left">
+        <li>Scoresheet scanning - scans chess tournament scoresheets and predicts closest matching moves recognized by it and provides opportunity to the user to correct misidentified moves.</li>
+        <li>Writing Game PGN - store scanned and corrected games as PGN on device.</li>
+        <li>Analysis - lets users do analysis of games in the database with a very strong chess engine.</li>
+        <li>Sharing Games - allows users to share their games PGN via email with fellow chess players or trainers.</li>
+    </ol>
+  <br>
+
+  <h3 class="text-left">Subscription</h3>
+  <p class="text-left">For the users wanting to use the full service, three different subscription levels are on for purchase:</p>
+    <ol class="text-left">
+        <li>Monthly</li>
+        <li>Quarterly</li>
+        <li>Half-Yearly</li>
+    </ol>
+  <br>
+  
+  <p class="text-left">Prices of these items can be found on App store or at 'My Subscription' page withiin the app. Each one of these three, in-app-purchase (IAP), products provide full functionality of the service but for aforementioned periods.</p>
+  <p class="text-left">Users who choose non-subscription based use of the service, for them, while the key functionality to save the game is not available, users can still:</p>
+  <ul class="text-left">
+	<li>Scan their scoresheets and correct moves detected thus</li>
+	<li>Play through the scanned game</li>
+	<li>Upload other games to 'Documents and Data' directory of the service through iTunes</li>
+	<li>Analyze games in their existing games database using one of the strongest chess engines</li>
+  </ul>
+  <br>
         
-    </body>
+  <p class="text-left">Once you have subscribed to the service and confirmed, payment will be charged to your Apple ID account. Subscription will be automatically renewed unless auto-renew is turned off at least 24 hours prior to your current subscription expiration date. Your account will be charged sometime within 24 hours before the end of your current period. You can manage and cancel your subscription by going to your App store account settings or check the status of your subscription at 'My Subscription' page within the service.</p>
+  <br>
+  
+  <h3 class="text-left">Using The Scanner Service</h3>
+  <ol class="text-left">
+	<li>Use camera icon and take as clear a photo as possible just about covering the whole scoresheet.</li>
+	<li>Once you have taken a scoresheet photo the scanner displays a preview view of the scoresheet. If you are satisfied with the image, press scan icon at the bottom left.</li>
+	<li>Scanner then lists all the moves it could identify/recognize. These moves are Scanner's best guesses.</li>
+	<li>Adjust piece animation speed to what makes you most comfortable working with.</li>
+	<li>Correct moves starting from the first move onwards by tapping on the move you would like to correct. In the horizontally scrollable popover that appears, all the legal moves from current board position are displayed. Select the correct move for the move that was incorrectly identified by the scanner. In the best case scenario you will have a very few moves to correct.</li>
+	<li>You can also correct a move using drag-and-drop by moving a piece on the board from the position that's on the board. To select a piece for drag-and-drop you have to long press the piece for a fraction of a second, which then highlights all the legal moves a piece can move to.</li>
+	<li>Swipe left or right on board to move ahead or back one half-move respectively. Double tap on extreme right or extreme left of the board to move ahead or back 5 moves respectively.</li>
+  </ol>
+</div>
+
+<!-- Container (Privacy Section) -->
+<div id="privacy" class="container text-center">
+  <h2 class="text-center">Privacy Policy</h2>
+  <p class="text-left">Please read this privacy policy carefully before using CheSScan (the "service") with or without the subscription; operated and maintained by CheSScan Developers ("us", 'we", "our"). We take privacy of our customers ("you", "your", "user") very seriously. This privacy policy lists the way in which we or our third party service providers collect, use and disclose the information collected of users using the service.</p>
+  <p class="text-left">By accessing the services provided by us, you consent to the privacy policy terms laid herein.</p>
+	<ul class="text-left">
+		<li>We do not ask our users to provide any personal information to use our services. Since we do not ask for any personal information we do not store it as well and sunsequently do not use it.</li>
+		<li>Bare minimum that we require to provide you premium service is to validate your service purchase receipt. This information is handled by RevenuCat, a third party service that we use for handling in-app purchases (IAP). Please visit <a href="https://www.revenuecat.com/dpa">RevenueCat</a> for privacy policy concerning your IAP data.</li>
+		<li>We reserve all the rights to change terms of service and privacy policy in case need arises to do so; at any time and without prior notice. From time to time you should keep checking our privacy policy page and if, at some later point, you are ever asked to provide any personal information, you would be well advised to recheck our privacy policy page. Your continued use of the services after revised policy has taken effect would be taken as acceptance of the revised policy.</li>
+	</ul>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h2 class="text-center">Contact Us</h2>
+  <div class="row">
+	<p class="text-center">Please report bugs or crashes to the developer(s) at developer@chesscan.com</p>
+	<p class="text-center">Copyright © 2019, <i>CheSScan Developer(s). All Rights Reserved.  </i><a href="www.chesscan.com">www.chesscan.com</a></p>
+    <p class="text-left"><span class="glyphicon glyphicon-envelope"></span>Email: developer@chesscan.com</p>
+  </div>
+  <br>
+  <p class="text-left">Effective as of July 31, 2019</p>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#chesscan" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+</footer>
+</body>
 </html>
